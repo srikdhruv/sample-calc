@@ -1,9 +1,11 @@
-from operations import add, subtract
+from operations import add, subtract, multiply, divide
 
 
 ops = {
     "+": add,
     "-": subtract,
+    "*": multiply,
+    "/": divide,
 }
 
 
