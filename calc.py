@@ -35,10 +35,7 @@ def calculate_add_on(parts):
     if last_result is None:
         raise ValueError("No previous result")
 
-    if operator == "-":
-        result = calculate_operation(str(last_result), operator, b_text)
-    else:
-        result = calculate_operation(str(last_result), operator, b_text)
+    result = calculate_operation(str(last_result), operator, b_text)
 
     set_last_result(result)
     return result
@@ -68,7 +65,7 @@ def run():
 
         try:
             result = calculate(text)
-            print(result)
+            print("Answer:", result)
             errors = 0
         except ValueError as error:
             print(error)
