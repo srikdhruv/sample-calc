@@ -36,7 +36,7 @@ def calculate_add_on(parts):
         raise ValueError("No previous result")
 
     if operator == "-":
-        result = calculate_operation(b_text, operator, str(last_result))
+        result = calculate_operation(str(last_result), operator, b_text)
     else:
         result = calculate_operation(str(last_result), operator, b_text)
 
